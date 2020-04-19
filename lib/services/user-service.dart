@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 getUsers() async {
   try {
     var response = await http.get(
-      'https://randomuser.me/api/?results=150'
+      'https://randomuser.me/api/?results=50'
     );
     var body = jsonDecode(response.body);
     return body['results'];
